@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Show.ShowViewController">
+    <children>
+        <Pane layoutX="20.0" layoutY="61.0" prefHeight="32.0" prefWidth="571.0">
+            <children>
+                <Label layoutX="74.0" layoutY="10.0" text="Heater Power Position" />
+                <Label fx:id="powerPositionLabel" layoutX="256.0" layoutY="10.0" prefHeight="17.0" prefWidth="194.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="14.0" layoutY="130.0" prefHeight="211.0" prefWidth="571.0">
+            <children>
+                <Label layoutX="215.0" layoutY="132.0" text="Outdoor Thermomter" />
+                <Label layoutX="109.0" layoutY="72.0" text="Thermometer 2" />
+                <Label layoutX="109.0" layoutY="47.0" text="Thermometer 1" />
+                <Label layoutX="233.0" layoutY="6.0" text="Indoor Thermomter" />
+                <Label layoutX="109.0" layoutY="171.0" text="Thermometer 1" />
+                <Label fx:id="indoor1Label" layoutX="260.0" layoutY="47.0" prefHeight="17.0" prefWidth="194.0" />
+                <Label fx:id="indoor2Label" layoutX="260.0" layoutY="72.0" prefHeight="17.0" prefWidth="194.0" />
+                <Label fx:id="outdoorLabel" layoutX="260.0" layoutY="171.0" prefHeight="17.0" prefWidth="194.0" />
+            </children>
+        </Pane>
+        <Label fx:id="warningLabel" layoutX="76.0" layoutY="355.0" prefHeight="18.0" prefWidth="438.0" textFill="#f80202" />
+        <Button layoutX="524.0" layoutY="14.0" mnemonicParsing="false" onAction="#controlButton" text="Controls" />
+    </children>
+</AnchorPane>
